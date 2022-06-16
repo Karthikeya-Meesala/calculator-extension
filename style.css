@@ -11,19 +11,19 @@ body {
     justify-content: left;
     align-items: top;
     min-height: 60vh;
-    background: #333;
+    background: #FF7BAD;
 }
-
-/* inset -5px -5px 15px rgba(0,0,0,0,0.5),
-    inset 5px 5px 15px rgba(0,0,0,0,0.5) */
 
 .container {
     position: relative;
-    min-width: 50px;
-    min-height: 50px;
-    background: #333;
-    padding: 40px 30px 20px;
-    border-radius: 20px;
+    width: 300px;
+    height: 390px;
+    background: #929FBC;
+    padding: 20px 15px 10px;
+    border:5px solid;
+    border-width: 5px;
+    border-color: #4E2B62;
+    border-radius: 35px;
     box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
     10px 10px 70px rgba(0,0,0,0.25);
 }
@@ -31,18 +31,18 @@ body {
 .calculator {
     position: relative;
     display: grid;
+    justify-items: center;
 }
 
 .calculator .value {
     position: relative;
     grid-column: span 4;
-    height: 100px;
-    width: 100%;
-    border: none;
-    outline: none;
-    background: #a7af7c;
+    height: 50px;
+    width: 90%;
+    background: #99EDFF;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border: 2px solid;
+    border-radius: 15px;
     box-shadow: 0 0 0 2px rgba(0,0,0,0.75);
     text-align: right;
     padding: 10px;
@@ -54,38 +54,19 @@ body {
     display: grid;
     height: 50px;
     width: 50px;
-    margin: 8px;
-    color: #ffffff;
-    background: linear-gradient(100deg, #2f2f2f, #3f3f3f);
-    box-shadow: inset -8px 0 8px rgba(0,0,0,0.15),
-    inset 0 -8px 8px rgba(0,0,0,0.25),
-    0 0 0 2px rgba(0,0,0,0.75),
-    10px 20px 25px rgba(0,0,0,0.4);
+    margin: 2px;
+    color: #4E2B62;
     user-select: none;
     cursor: pointer;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 700;
     place-items: center;
-}
-
-.calculator span::before{ 
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 4px;
-    bottom: 14px;
-    right: 12px;
-    background: linear-gradient(90deg, #2f2f2f, #3f3f3f);
+    background-color: #ffffff;
+    border:5px solid;
     border-radius: 10px;
-    box-shadow: -5px -5px 15px rgba(0,0,0,0.1),
-    10px 5px 10px rgba(0,0,0,0.15);
-    border-left: 1px solid #0004;
-    border-bottom: 1px solid #0004;
-    border-top: 1px solid #0009;
-}
-
-.calculator span:active {
-    filter: brightness(1.5);
+    border-color: #4E2B62;
+    border-width: 3px;
+    
 }
 
 
@@ -98,16 +79,12 @@ body {
 
 .calculator .clear {
     grid-column: span 2;
-    width: 170px;
-    background: #f00;
-}
-.calculator .clear::before {
-    background: linear-gradient(100deg,#d20000, #ffffff5c);
-
+    width: 115px;
+    background: #E6A130;
 }
 
 .calculator .plus{
     grid-row: span 2;
-    height: 115px;
+    height: 110px;
 
 }
