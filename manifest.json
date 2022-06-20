@@ -1,0 +1,24 @@
+{
+"manifest_version": 3,
+"name": "Calculator",
+"short_name": "Calculator",
+"description": "A simple calculator that remembers your last calculation. You can close it at any time and reopen it without losing your work.",
+"version": "1.8.0",
+"offline_enabled": false,
+"icons": { 	  
+      "16": "icon-16_x_16.ico",
+      "32": "icon-32_x_32.ico",
+      "48": "icon-48_x_48.ico",
+      "128": "icon-128_x_128.ico"
+},
+"permissions": [
+  ],
+"action": {
+  "default_icon": {
+        "16": "icon-16_x_16.ico",
+        "32": "icon-32_x_32.ico"
+       },
+  "default_popup": "popup.html",
+  "default_title": "Calculator"
+} 
+}
